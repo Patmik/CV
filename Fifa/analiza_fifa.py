@@ -49,7 +49,7 @@ barcelona=fifa.loc[fifa.Club=='FC Barcelona']['Total']
 juventus=fifa.loc[fifa.Club=='Juventus']['Total']
 
 plt.boxplot([barcelona,juventus],labels=['FC Barcelona', 'Juventus'])
-plt. title('Porównanie FC Barcelony vs Juventus',fontdict={'fontsize':20})
+plt.title('Porównanie FC Barcelony vs Juventus',fontdict={'fontsize':20})
 
 plt.savefig('grafy/barcelona_juventus.png',dpi=300)
 plt.close()
@@ -62,7 +62,7 @@ left=fifa.loc[fifa['Preferred Foot']=='Left'].count()[0]
 
 plt.pie([right,left],labels=['right','left'], autopct='%.2f%%', pctdistance=0.7, explode=(0.11,0.11))
 
-plt. title('Preferencje nogi',fontdict={'fontsize':20})
+plt.title('Preferencje nogi',fontdict={'fontsize':20})
 
 plt.savefig('grafy/leg_preference',dpi=300)
 plt.close()
@@ -80,7 +80,7 @@ bins=(0,10,20,30,40,50,60,70,80,90,100)
 plt.hist(fifa.Value,bins=bins,)
 plt.xticks(bins)
 
-plt. title('Rozkład wartości zawodników',fontdict={'fontsize':20})
+plt.title('Rozkład wartości zawodników',fontdict={'fontsize':20})
 
 plt.savefig('grafy/Players value',dpi=300)
 plt.close()
